@@ -87,11 +87,14 @@ bash Miniconda3-latest-Linux-x86_64.sh
 Implementation details in _perception/eval.py_ (hypothetical path).
 Generate PR curves for IoU thresholds *0.5:0.1:0.9*.
 
+![c1](outputs/c1.png)
+
 ### 2. Running the Simulator (Challenge 2)
 
 Start CARLA in off-screen mode (renders to the GPU buffer, viewable via VNC):
 ```./CarlaUE4.sh -prefernvidia -RenderOffScreen -carla-port=2000```
 
+![c2](outputs/c2.png)
 
 ### 3. Training & Evaluation (Challenge 3)
 
@@ -110,4 +113,4 @@ Evaluate SAC Agent (Safety-Critical Scenarios):
 
 ```python scripts/run.py --agent_cfg sac.yaml --scenario_cfg standard.yaml \--num_scenario 4 --mode eval --save_video```
 
-
+![c3](outputs/c33.png)
